@@ -1,0 +1,8 @@
+VEHICLE IMAGE UPDATE
+--------------------
+The supplied Innova Crysta photograph is assigned to:
+- 5-Seater Car (car-5)
+- 6–7 Seater Family Vehicle (suv-7)
+
+The 4-Seater Car continues to use the Swift Dzire photograph.
+Local image: images/vehicles/innova-crysta.jpg

@@ -1,0 +1,9 @@
+FONT AND ICON UPDATE
+--------------------
+Typography refreshed to a clean sans-serif style inspired by the supplied Dreamvalley reference:
+- Poppins for headings and brand/display text
+- Inter for body text, navigation, cards, forms and buttons
+- Consistent responsive heading and paragraph sizes
+- Footer contact icons use fixed-size centered flex alignment
+
+Google Fonts are loaded online. System fallbacks are included.

@@ -1,0 +1,24 @@
+OPPAM TRAVELS — MOBILE RESPONSIVE UPDATE
+
+This update improves the layout across all pages for mobile phones and tablets.
+
+Main fix for the issue in your screenshot:
+- The home page destination route list now displays vertically on phones.
+- Each destination has enough vertical spacing.
+- The gold/green route dots are positioned to the left of the text and no longer overlap destination names.
+- Long destination names can wrap safely.
+
+Other mobile improvements:
+- Mobile navigation menu has a clear solid background and readable links.
+- Hero buttons stack neatly and use the full available width.
+- Vehicle and destination cards become one-column cards on phones.
+- Forms, detail pages, image galleries, footer and contact buttons are adjusted for small screens.
+- Added smaller-screen adjustments for phones 380px wide and below.
+
+HOW TO USE:
+1. Extract this ZIP.
+2. Replace your old project folder with this updated oppam-travels folder (or copy the updated css/styles.css into your existing project).
+3. Open index.html with VS Code Live Server.
+4. Test using Chrome DevTools > Toggle device toolbar, and also on a real phone.
+
+All image placeholders remain local/manual-image placeholders. No external online image URLs were added by this mobile layout update.
