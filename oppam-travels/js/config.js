@@ -27,7 +27,7 @@ window.SITE = {
   ],
 
   /* Testimonials. The three below are SAMPLE text so the layout can be seen.
-     Replace with real customer reviews and remove ``. */
+     Replace with real customer reviews and remove `sample: true`. */
   testimonials: [
     {
       name: "Aravindh",

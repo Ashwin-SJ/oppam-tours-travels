@@ -39,7 +39,9 @@
     "honeymoon-kerala": "images/packages/kerala-honeymoon.jpg",
     "munnar-two-day": "images/packages/munnar-hills.jpg",
     "munnar-thekkady-three-day": "images/packages/munnar-thekkady.jpg",
-    "beach-weekend": "images/packages/varkala-kovalam.jpg"
+    "beach-weekend": "images/packages/varkala-kovalam.jpg",
+    "athirappilly-one-day": "images/packages/athirappilly-day-trip.jpg",
+    "custom-kerala": "images/packages/custom-kerala.jpg"
   };
   window.PACKAGES.forEach((item) => { if (packagePhotos[item.id]) item.image = packagePhotos[item.id]; });
   window.PACKAGES.find((x) => x.id === "custom-kerala").inclusions = ["Vehicle with driver", "Route and days planned around your wishes"];

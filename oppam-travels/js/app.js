@@ -44,7 +44,7 @@
   }
 
   /* ---------- shell: header, footer, floating buttons ---------- */
-  const NAV = [["Home", "index.html", "home"], ["Vehicles", "vehicles.html", "vehicles"], ["About Us", "about.html", "about"], ["Contact", "contact.html", "contact"]];
+  const NAV = [["Home", "index.html", "home"], ["Vehicles", "vehicles.html", "vehicles"], ["Destinations", "destinations.html", "destinations"], ["Packages", "packages.html", "packages"], ["About Us", "about.html", "about"], ["Contact", "contact.html", "contact"]];
   const activeKey = { vehicle: "vehicles", destination: "destinations", package: "packages" }[page] || page;
 
   function shell() {
@@ -115,8 +115,8 @@
     app.innerHTML = `
     <section class="hero"><svg class="route-art" viewBox="0 0 600 400" aria-hidden="true" preserveAspectRatio="xMaxYMax meet"><path class="route-line" d="M20 40 C 180 60, 120 200, 260 230 S 420 300, 540 360" fill="none" stroke="#e8b03a" stroke-width="3" stroke-linecap="round" stroke-dasharray="2 12"/><circle cx="540" cy="360" r="8" fill="#e8b03a"/><text x="530" y="340" text-anchor="end" fill="#fff" font-size="16" font-family="Figtree,sans-serif">Kanyakumari</text></svg>
       <div class="wrap hero-in"><h1>Explore Kerala &amp; Beyond with Oppam Travels</h1>
-      <p>Travel with confidence across Kerala and Kanyakumari. Choose from cars, SUVs, Tempo Travellers and luxury buses, with trip planning coordinated by Pro Abi S.</p>
-      <div class="btns"><a class="btn btn-ghost" href="booking.html">Book Your Trip</a></div>
+      <p>Travel with confidence across Kerala and Kanyakumari. Choose from cars, SUVs, Tempo Travellers and luxury buses, with trip planning coordinated by Abi S.</p>
+      <div class="btns"><a class="btn btn-gold" href="destinations.html">Explore Destinations</a><a class="btn btn-ghost" href="booking.html">Book Your Trip</a></div>
       <div class="hero-fleet" aria-label="Featured Oppam Travels vehicles">
         <a href="vehicle.html?id=innova-crysta"><img src="images/vehicles/innova-crysta.jpg" alt="Innova Crysta"><span>Innova Crysta</span></a>
         <a href="vehicle.html?id=urbania"><img src="images/vehicles/urbania.jpg" alt="Force Urbania"><span>Force Urbania</span></a>
@@ -132,7 +132,7 @@
     <section class="section alt"><div class="wrap"><div class="sec-head"><h2>Vehicles for every group</h2><a href="vehicles.html">View all vehicles</a></div><div class="grid two">
       <a class="cat" href="vehicles.html?cat=car"><h3>Cars &amp; family vehicles</h3><p>4, 5 and 6–7 seaters for couples and families.</p><ul class="chips">${V.filter((v) => v.group === "car").map((v) => `<li>${v.seats} seats</li>`).join("")}</ul></a>
       <a class="cat" href="vehicles.html?cat=group"><h3>Tourist &amp; group vehicles</h3><p>12 to 52 seaters for tours, weddings and events.</p><ul class="chips">${V.filter((v) => v.group === "group").map((v) => `<li>${v.seats} seats</li>`).join("")}</ul></a></div></div></section>
-
+    
     ${S.testimonials.length ? `<section class="section alt"><div class="wrap"><div class="sec-head"><h2>What travellers say</h2></div><div class="grid">${S.testimonials.map((t) => `<figure class="quote"><blockquote>${esc(t.text)}</blockquote><figcaption>${esc(t.name)}, ${esc(t.place)}${t.sample ? ' <span class="sample">Sample</span>' : ""}</figcaption></figure>`).join("")}</div></div></section>` : ""}
     ${ctaBand}`;
   };
@@ -141,7 +141,7 @@
     setMeta("About Us", "Oppam Travels: vehicle rental with drivers and tour packages across Kerala and Kanyakumari. Learn about our drivers, vehicles and safety practices.");
     const safe = [["Experienced, professional drivers", "Your driver handles the road so you can enjoy the journey."], ["Properly maintained vehicles", "Vehicles are kept in good running order for long trips."], ["Comfortable travel", "Seating and pace planned around your group."], ["Safe driving practices", "Steady, careful driving on hill and highway roads."], ["Family-friendly transport", "Suitable for children and senior travellers."], ["Group travel facilities", "Vehicles from 12 to 52 seats for larger parties."], ["Support throughout the journey", "Call or message us if anything changes on the road."]];
     app.innerHTML = `${head("About Oppam Travels", "Travel together, travel comfortably.")}
-    <section class="section"><div class="wrap split"><div><h2>Oppam means “together”</h2><p><strong>Oppam Tours &amp; Travels</strong> is coordinated by <strong>${esc(S.owner)}</strong>, based in <strong>Poovar, Thiruvananthapuram</strong>. Call <a href="tel:${esc(S.phone)}">${esc(S.phoneDisplay)}</a> for vehicle rentals, tour packages and trip coordination.</p><p>In Malayalam, <em>oppam</em> means “along with”. That is how we like to travel with you: planning the route with you, driving you there, and staying reachable until you are home.</p><p>We offer vehicles with drivers and tour packages across Kerala and Kanyakumari, from one-day sightseeing to multi-day family and honeymoon tours.</p><div class="btns"><a class="btn btn-primary" href="vehicles.html">See our vehicles</a></div></div><div class="media rounded">${img("images/about-group.jpg", "Oppam Travels vehicle")}</div></div></section>
+    <section class="section"><div class="wrap split"><div><h2>Oppam means “together”</h2><p><strong>Oppam Tours &amp; Travels</strong> is coordinated by <strong>${esc(S.owner)}</strong>, based in <strong>Poovar, Thiruvananthapuram</strong>. Call <a href="tel:${esc(S.phone)}">${esc(S.phoneDisplay)}</a> for vehicle rentals, tour packages and trip coordination.</p><p>In Malayalam, <em>oppam</em> means “along with”. That is how we like to travel with you: planning the route with you, driving you there, and staying reachable until you are home.</p><p>We offer vehicles with drivers and tour packages across Kerala and Kanyakumari, from one-day sightseeing to multi-day family and honeymoon tours.</p><div class="btns"><a class="btn btn-primary" href="vehicles.html">See our vehicles</a><a class="btn btn-outline" href="packages.html">See packages</a></div></div><div class="media rounded">${img("images/about-group.jpg", "Oppam Travels vehicle")}</div></div></section>
     <section class="section alt" id="safety"><div class="wrap"><div class="sec-head"><h2>Safety and professional drivers</h2></div><div class="grid why">${safe.map(([t, d]) => `<div class="why-item"><h3>${t}</h3><p>${d}</p></div>`).join("")}</div>
     ${S.credentials.length ? `<h3 class="mt">Verified credentials</h3><ul class="ticks">${S.credentials.map((c) => `<li><strong>${esc(c.title)}</strong>: ${esc(c.detail)}</li>`).join("")}</ul>` : ""}</div></section>${ctaBand}`;
   };

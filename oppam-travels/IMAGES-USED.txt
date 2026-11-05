@@ -1,31 +1,10 @@
-OPPAM TOURS & TRAVELS — LOCAL IMAGE INVENTORY
+OPPAM TRAVELS – IMAGE UPDATE
 
-All website image references are local project files. No remote image URLs are used.
+Destination photos supplied for this update are stored locally in images/destinations/ and mapped in js/data/destinations.js.
+Package photos supplied for this update are stored locally in images/packages/ and mapped in js/data/packages.js.
 
-Branding
-- images/logo.png — supplied Oppam logo
-- images/hero-banner.jpg — supplied homepage vehicle banner
-- images/about-group.jpg — supplied group travel photo
+New destination photos: Kozhikode, Thrissur, Athirappilly, Kumarakom, Bekal, Muttom Beach, Vattakottai Fort, Mathur Aqueduct, Padmanabhapuram Palace (2 photos), Suchindram, Idukki and Ponmudi.
+New package photos: Athirappilly Waterfall Day Trip and Customised Kerala Tour.
 
-Vehicles
-- images/vehicles/swift-dzire.jpg — Swift Dzire, 4-seater category
-- images/vehicles/innova-crysta.jpg — Innova Crysta
-- images/vehicles/ertiga.jpg — Ertiga
-- images/vehicles/urbania.jpg — Force Urbania
-- images/vehicles/tempo-traveller.jpg — Tempo Traveller
-- images/vehicles/luxury-bus.jpg — luxury tourist bus
-- Generic 5-seater and unpictured capacities use clearly labelled local SVG placeholders, not duplicated vehicle photos.
-
-Destinations
-- Munnar, Wayanad, Alappuzha, Kochi, Thekkady, Kanyakumari Beach, Vivekananda Rock Memorial, Thirparappu Falls — supplied photos in images/destinations/
-- Vagamon, Varkala, Kovalam — newly supplied photos in images/destinations/
-- Destinations without a supplied photograph retain a local SVG placeholder.
-
-Packages (dedicated photos, separate from destination photos)
-- images/packages/kerala-family.jpg
-- images/packages/kerala-honeymoon.jpg
-- images/packages/munnar-hills.jpg
-- images/packages/munnar-thekkady.jpg
-- images/packages/varkala-kovalam.jpg
-
-No photo is intentionally reused between the dedicated package image cards.
+The existing customer review text in js/config.js has been preserved exactly as supplied in the existing project.
+The existing responsive layout and route/icon alignment CSS fixes have been retained.

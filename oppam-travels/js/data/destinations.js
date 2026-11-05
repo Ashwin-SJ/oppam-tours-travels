@@ -47,4 +47,23 @@
     d("vattakottai", "Vattakottai Fort", "Kanyakumari", false, "A fort beside the sea", "A coastal fort of granite walls with open sea views, close to Kanyakumari.", ["Fort ramparts", "Sea-facing viewpoint", "Nearby beach"], ["Fort walk", "Sunset views"], "1–2 hours"),
     d("muttom-beach", "Muttom Beach", "Kanyakumari", false, "Rocky shores and a lighthouse", "A scenic beach with rock formations and a lighthouse on the Kanyakumari coast.", ["Muttom Beach", "Muttom Lighthouse", "Rocky shoreline"], ["Beach walk", "Photography", "Sunset views"], "1–2 hours")
   ];
+
+  // Client-supplied destination photographs (local files, no external image links).
+  const suppliedPhotos = {
+    kozhikode: ["images/destinations/kozhikode.jpg"],
+    thrissur: ["images/destinations/thrissur.jpg"],
+    athirappilly: ["images/destinations/athirappilly.jpg"],
+    kumarakom: ["images/destinations/kumarakom.jpg"],
+    bekal: ["images/destinations/bekal.jpg"],
+    "muttom-beach": ["images/destinations/muttom-beach.jpg"],
+    vattakottai: ["images/destinations/vattakottai.jpg"],
+    "mathur-aqueduct": ["images/destinations/mathur-aqueduct.jpg"],
+    padmanabhapuram: ["images/destinations/padmanabhapuram.jpg", "images/destinations/padmanabhapuram-2.jpg"],
+    suchindram: ["images/destinations/suchindram.jpg"],
+    idukki: ["images/destinations/idukki.jpg"],
+    ponmudi: ["images/destinations/ponmudi.jpg"]
+  };
+  window.DESTINATIONS.forEach((destination) => {
+    if (suppliedPhotos[destination.id]) destination.images = suppliedPhotos[destination.id];
+  });
 })();

@@ -1,4 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;600;700;800&family=Figtree:wght@400;500;600;700;800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Poppins:wght@500;600;700;800&display=swap');
 
 :root{
@@ -156,9 +155,9 @@ p{margin:0 0 1em}
   .route i{top:50%;left:-9px;transform:translateY(-50%)}
 }
 
-.why-item{background:#fff;border:1px solid var(--line);border-radius:var(--r);padding:1.3rem}
+.why-item{background:#c5bcbc;border:1px solid var(--line);border-radius:var(--r);padding:1.3rem}
 .why-item h3{font-size:1.1rem}.why-item p{margin:0;color:var(--muted)}
-.quote{margin:0;background:#a4a99d;border-radius:var(--r);padding:1.4rem;border:1px solid var(--line)}
+.quote{margin:0;background:#cec9c9;border-radius:var(--r);padding:1.4rem;border:1px solid var(--line)}
 .quote blockquote{margin:0 0 .8rem;font-family:var(--display);font-size:1.1rem}
 .quote figcaption{color:var(--muted);font-size:.9rem}.sample{background:var(--gold);color:var(--green-900);border-radius:999px;font-size:.72rem;padding:.1rem .5rem;font-weight:700}
 .cta-band{background:var(--green-900);color:#fff;padding:3.2rem 0;text-align:center}
@@ -422,85 +421,6 @@ code{background:rgba(0,0,0,.07);padding:.1em .35em;border-radius:4px}
   .nav a:not(.btn){font-size:1rem;font-weight:600}
   .footer-icon{width:42px;height:42px;min-width:42px;flex-basis:42px}
 }
-
-
-/* ==========================================================
-   DESIGN REFRESH — inspired by the supplied teal & gold reference
-   Display: Bricolage Grotesque | Body: Figtree
-   ========================================================== */
-
-:root{
-  --green-900:#0d2b2c;
-  --green-700:#115e59;
-  --green-500:#1b7a72;
-  --green-100:#eef5f3;
-  --paper:#ffffff;
-  --sand:#eef5f3;
-  --line:#dbe7e4;
-  --ink:#0d2b2c;
-  --muted:#53696a;
-  --laterite:#0b4440;
-  --gold:#e0a62b;
-  --wa:#16834a;
-  --display:"Bricolage Grotesque", "Trebuchet MS", sans-serif;
-  --body:"Figtree", "Segoe UI", Arial, sans-serif;
-  --r:18px;
-  --r-sm:12px;
-  --sh:0 10px 30px rgba(13,43,44,.12);
-}
-html,body{font-family:var(--body);color:var(--ink)}
-h1,h2,h3,h4,.brand,.logo,.section-title{font-family:var(--display);letter-spacing:-.025em}
-h1{font-weight:800;line-height:1.1}
-h2{font-weight:700;line-height:1.18}
-h3{font-weight:700;line-height:1.25}
-p,li{line-height:1.68}
-.btn,.nav a,.button{font-family:var(--body);font-weight:700}
-.card,.panel,.quote,.booking-card{border-color:var(--line)}
-/* Gold is reserved for important actions, highlights and small accents. */
-.btn-gold,.btn-primary,.primary-btn{background:var(--gold);color:var(--green-900)}
-.btn-gold:hover,.btn-primary:hover,.primary-btn:hover{background:#f0bd50;color:var(--green-900)}
-:focus-visible{outline-color:var(--gold)}
-
-/* Fix footer contact cards on mobile */
-@media (max-width: 600px) {
-  .footer-contact {
-    display: grid;
-    grid-template-columns: minmax(0, 1fr);
-    width: 100%;
-    min-width: 0;
-  }
-
-  .site-footer .footer-contact-card {
-    display: flex;
-    align-items: center;
-    width: 100%;
-    min-width: 0;
-    max-width: 100%;
-    box-sizing: border-box;
-    padding: 12px;
-    gap: 12px;
-  }
-
-  .footer-contact-card .footer-icon {
-    flex: 0 0 42px;
-    width: 42px;
-    height: 42px;
-  }
-
-  .footer-contact-card > span:last-child {
-    flex: 1;
-    min-width: 0;
-  }
-
-  .footer-contact-card strong {
-    overflow-wrap: anywhere;
-    word-break: break-word;
-  } 
-}
-.site-footer .footer-contact-card > span:last-child {
-  width: 0 !important;
-  overflow: hidden !important;
-}
 html, body {
   margin: 0;
   padding: 0;
@@ -512,4 +432,49 @@ html, body {
 
 body {
   overflow-x: hidden;
+}
+.footer-made {
+    font-size: 9px !important;
+    font-weight: 400 !important;
+    opacity: 0.65;
+}
+/* Center copyright and developer credit */
+.footer-bottom {
+    text-align: center !important;
+    justify-content: center !important;
+    align-items: center !important;
+    flex-direction: column !important;
+    gap: 6px;
+}
+
+.footer-bottom > * {
+    text-align: center !important;
+}
+.footer-bottom {
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+    align-items: center !important;
+    text-align: center !important;
+    gap: 5px !important;
+    padding: 12px 8px !important;
+}
+
+.footer-bottom p,
+.footer-bottom span,
+.footer-bottom a {
+    font-size: 11px !important;
+    font-weight: 400 !important;
+    line-height: 1.5 !important;
+    text-align: center !important;
+}
+
+.footer-made {
+    font-size: 10px !important;
+    opacity: 0.75 !important;
+}
+.footer-made {
+    font-size: 9px !important;
+    font-weight: 400 !important;
+    opacity: 0.65;
 }
